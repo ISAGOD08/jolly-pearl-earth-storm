@@ -1,0 +1,899 @@
+import { i as __toESM } from "../_runtime.mjs";
+import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { R as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
+import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
+import { t as twMerge } from "../_libs/tailwind-merge.mjs";
+import { t as Slot } from "../_libs/radix-ui__react-slot.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/slides-BMNjH8eX.js
+var import_react = /* @__PURE__ */ __toESM(require_react());
+var import_jsx_runtime = require_jsx_runtime();
+function cn(...inputs) {
+	return twMerge(clsx(inputs));
+}
+var buttonVariants = cva("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors transition-transform duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98]", {
+	variants: {
+		variant: {
+			default: "bg-accent text-accent-fg hover:bg-accent/90",
+			paper: "bg-paper text-ink hover:bg-surface",
+			ghost: "bg-transparent text-paper/80 hover:bg-paper/10 hover:text-paper",
+			ink: "bg-ink text-paper hover:bg-ink/90",
+			outline: "border border-line bg-transparent text-ink hover:bg-surface",
+			clinical: "bg-clinical text-paper hover:bg-clinical/90"
+		},
+		size: {
+			default: "h-11 px-4",
+			sm: "h-9 px-3 text-xs",
+			lg: "h-12 px-6",
+			icon: "size-11"
+		}
+	},
+	defaultVariants: {
+		variant: "default",
+		size: "default"
+	}
+});
+var Button = import_react.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(asChild ? Slot : "button", {
+		className: cn(buttonVariants({
+			variant,
+			size,
+			className
+		})),
+		ref,
+		...props
+	});
+});
+Button.displayName = "Button";
+var SECTIONS = [
+	{
+		id: "apertura",
+		label: "Apertura",
+		color: "accent"
+	},
+	{
+		id: "esqueleto",
+		label: "Esqueleto",
+		color: "bone"
+	},
+	{
+		id: "articulaciones",
+		label: "Articulaciones",
+		color: "cartilage"
+	},
+	{
+		id: "conjunto",
+		label: "Tórax en conjunto",
+		color: "accent"
+	},
+	{
+		id: "musculos",
+		label: "Músculos",
+		color: "bone"
+	},
+	{
+		id: "diafragma",
+		label: "Diafragma",
+		color: "cartilage"
+	},
+	{
+		id: "cierre",
+		label: "Clínica y cierre",
+		color: "clinical"
+	}
+];
+var slides = [
+	{
+		id: "portada",
+		section: "apertura",
+		chapter: "Apertura",
+		minutes: 2,
+		core: true,
+		kicker: "Anatomía humana · Equipo 2",
+		title: "Caja torácica",
+		bullets: [
+			"Sección XIII · capítulos 71 a 75",
+			"Esqueleto, articulaciones, conjunto, músculos, diafragma",
+			"Clase de 75 a 90 minutos"
+		],
+		diagram: "cage",
+		script: [
+			"Buenas. Hoy no vamos a pasar de largo la caja torácica. Vamos a recorrerla como si estuviéramos en la mesa de disección: hueso por hueso, cartílago por cartílago, articulación por articulación, y al final el músculo que cierra la caja por abajo, el diafragma.",
+			"La clase está armada sobre la Sección XIII del tratado: capítulo 71 esqueleto del tórax, 72 articulaciones, 73 el tórax osteocartilaginoso en general, 74 músculos del tórax y 75 diafragma. Eso cubre más o menos hora y media si vamos con calma. Si el tiempo aprieta, hay diapositivas marcadas como extra y las saltamos.",
+			"Regla de la clase: en la pantalla hay poca letra a propósito. El detalle lo voy a decir yo. Ustedes miren el esquema, señalen con el dedo, y si se pierden me detienen."
+		]
+	},
+	{
+		id: "objetivos",
+		section: "apertura",
+		chapter: "Apertura",
+		minutes: 2,
+		core: true,
+		kicker: "Para qué estamos aquí",
+		title: "Al terminar esta clase deben poder",
+		bullets: [
+			"Armar la caja: 12 vértebras, esternón, 24 costillas y cartílagos",
+			"Clasificar cada costilla y describir la 1.ª, 2.ª, 11.ª y 12.ª",
+			"Nombrar las articulaciones que permiten respirar",
+			"Explicar los tres hiatos del diafragma y el nervio frénico"
+		],
+		script: [
+			"No quiero que salgan recitando páginas. Quiero cuatro cosas concretas.",
+			"Uno: que puedan reconstruir la caja. Atrás doce vértebras torácicas. Adelante un solo hueso, el esternón. A los lados veinticuatro arcos —doce por lado— más los cartílagos costales.",
+			"Dos: que clasifiquen costillas verdaderas, falsas y flotantes, y que la primera, la segunda, la once y la doce no se les escapen, porque no son el modelo general.",
+			"Tres: que entiendan que esta caja se mueve. Si no hay articulación costovertebral y esternocostal, no hay mecánica respiratoria.",
+			"Cuatro: diafragma. Tres orificios grandes —vena cava a T8, esófago a T10, aorta a T12— y un nervio, el frénico, C3 C4 C5."
+		]
+	},
+	{
+		id: "mapa",
+		section: "apertura",
+		chapter: "Apertura",
+		minutes: 1,
+		core: true,
+		kicker: "Ruta de la hora y media",
+		title: "Cómo vamos a caminar el tórax",
+		bullets: [
+			"0–25 min · esqueleto: esternón y cada costilla",
+			"25–40 min · articulaciones",
+			"40–52 min · forma, orificios, tipos, radiología",
+			"52–85 min · músculos y diafragma · luego clínica"
+		],
+		script: [
+			"Miren el reloj conmigo. Los primeros veinticinco minutos son hueso duro: esternón pieza por pieza y costillas, incluyendo las raras.",
+			"Después quince minutos de articulaciones. Ahí está el secreto de por qué el tórax no es una jaula soldada.",
+			"Luego el conjunto: forma, caras, orificio de arriba, orificio de abajo, tipos de tórax, qué se ve en la placa.",
+			"La segunda mitad es músculo: intercostales con su paquete vasculonervioso, y el diafragma entero. Cerramos con fracturas, pectus, costilla cervical y hernias. Si alguien se duerme, que sea después del diafragma, no antes."
+		]
+	},
+	{
+		id: "definicion",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 3,
+		core: true,
+		kicker: "Definición",
+		title: "Qué es la caja torácica",
+		bullets: [
+			"Formación osteocartilaginosa",
+			"Contiene pulmones, corazón y mediastino",
+			"También protege hígado, bazo, suprarrenales y polo renal"
+		],
+		diagram: "cage",
+		script: [
+			"Se llama caja torácica a la formación osteocartilaginosa —hueso más cartílago, no solo hueso— que contiene los pulmones, el corazón y los demás órganos mediastinales.",
+			"Está formada así. En la línea media posterior: las doce vértebras torácicas. En la línea media anterior: un hueso único, el esternón. Lateralmente: veinticuatro arcos, doce de cada lado, las costillas, y los cartílagos costales que las prolongan hacia adelante.",
+			"Ojo clínico desde ya: esta caja no solo guarda el tórax. Por abajo del diafragma, los arcos costales cubren hígado, bazo, glándulas suprarrenales, y la parte alta del estómago y de los riñones. Una puñalada en el octavo espacio izquierdo no es “solo tórax”. Puede ser bazo. Una derecha puede ser hígado."
+		]
+	},
+	{
+		id: "esternon-panorama",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 3,
+		core: true,
+		kicker: "Hueso impar, mediano, anterior",
+		title: "Esternón: tres piezas, un hueso",
+		bullets: [
+			"Plano · 15 a 20 cm en el adulto",
+			"Manubrio · cuerpo · apófisis xifoides",
+			"En el adulto suelen estar soldadas"
+		],
+		diagram: "sternum",
+		script: [
+			"El esternón es un hueso plano, impar, mediano, sentado en la pared anterior del tórax, recibiendo a derecha e izquierda los cartílagos costales.",
+			"Mide de quince a veinte centímetros en el adulto. Se va estrecho de arriba hacia abajo. Tres segmentos: el superior se llama manubrio; el medio, cuerpo; el inferior, en punta, apófisis xifoides. En el cadáver adulto suelen venir soldados; en el esqueleto desarticulado a veces se separan.",
+			"Para orientarlo: la cara convexa, donde las líneas transversales se marcan más, mira adelante. El hueso se dirige oblicuo de arriba hacia abajo y de atrás hacia adelante. El manubrio está más atrás que el xifoides. Por eso el ángulo esternal se palpa como un resalto."
+		]
+	},
+	{
+		id: "esternon-caras",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 3,
+		core: true,
+		kicker: "Cara anterior, posterior y bordes",
+		title: "Lo que se ve y lo que se inserta",
+		bullets: [
+			"Anterior: líneas de soldadura de las esternebras",
+			"Ángulo de Louis: unión manubrio–cuerpo = 2.º cartílago",
+			"Bordes: escotaduras costales 1 a 7 e intercostales"
+		],
+		diagram: "sternum",
+		script: [
+			"Cara anterior. Lo que la caracteriza son líneas transversales que van de un borde al otro. Esas líneas son las soldaduras de las esternebras, las piececitas primitivas del esternón. La más marcada está en la unión del manubrio con el cuerpo: el ángulo esternal, ángulo de Louis. Memorícenlo hoy y no lo suelten en la vida: el ángulo de Louis marca el segundo cartílago costal. De ahí cuentan hacia abajo. Es el hito de superficie más útil del tórax anterior.",
+			"Cara posterior. En conjunto cóncava hacia atrás, o sea el hueso es convexo hacia adelante. En el manubrio hay rugosidades para músculos infrahioideos.",
+			"Bordes derecho e izquierdo, sinuosos, en S itálica. Alternan escotaduras costales —donde se articulan los seis primeros cartílagos, y en el ápice el séptimo— con escotaduras intercostales, que no son articulares. En la xifoides se inserta el músculo recto del abdomen y el transverso del tórax por detrás."
+		]
+	},
+	{
+		id: "esternon-extremos",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 2,
+		core: true,
+		kicker: "Extremos y estructura",
+		title: "Yugular, clavículas y hueso esponjoso",
+		bullets: [
+			"Extremo superior: escotadura yugular + 2 claviculares",
+			"Xifoides: cartilaginosa mucho tiempo, forma variable",
+			"Hueso plano, relativamente grueso, elástico en el vivo"
+		],
+		diagram: "sternum",
+		script: [
+			"Extremo superior: una depresión, la escotadura yugular, y a cada lado las escotaduras claviculares. Ahí se sienta la clavícula. Entre el primer cartílago y la clavícula queda un espacio que participa en la articulación esternoclavicular.",
+			"Extremo inferior: la xifoides puede ser ósea o cartilaginosa, larga o corta, perforada o desviada. No se asusten si en un compañero se palpa torcida: es de las variantes más comunes.",
+			"Estructura: es hueso plano relativamente grueso, con una cáscara compacta y un relleno esponjoso. En el vivo es elástico. En el microscopio las trabéculas siguen las fuerzas de los cartílagos. En médula, el esternón es sitio clásico de biopsia: se punciona el cuerpo, no el manubrio, y con respeto al mediastino que está detrás."
+		]
+	},
+	{
+		id: "esternon-desarrollo",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 2,
+		core: true,
+		kicker: "Desarrollo y anomalías",
+		title: "Embudo, carena y soldaduras tardías",
+		bullets: [
+			"Fusión de esternebras desde los 3 años",
+			"Manubrio–cuerpo soldado a los 20–25 años",
+			"Tórax en embudo · tórax en carena"
+		],
+		script: ["El modelo cartilaginoso del esternón se osifica en puntos: uno para el manubrio, varios para el cuerpo, uno tardío para la xifoides. La fusión de las esternebras empieza por los tres años. El manubrio con el cuerpo no termina de soldarse hasta los veinte o veinticinco. La xifoides se queda independiente mucho tiempo. Por eso en un joven el ángulo de Louis todavía “juega” un poco.", "Las anomalías se concentran abajo. Si la punta se hunde hacia la columna, tórax en embudo: pectus excavatum. Si se sale hacia adelante, tórax en carena: pectus carinatum. No son adornos estéticos: el embudo puede comprimir el corazón y correr el mediastino. Lo van a volver a ver en clínica."]
+	},
+	{
+		id: "costillas-clase",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 3,
+		core: true,
+		kicker: "24 arcos · 12 por lado",
+		title: "Verdaderas, falsas y flotantes",
+		bullets: [
+			"1.ª a 7.ª verdaderas: cartílago propio al esternón",
+			"8.ª a 10.ª falsas: al cartílago costal común",
+			"11.ª y 12.ª flotantes: extremo anterior libre"
+		],
+		diagram: "classes",
+		script: [
+			"Las costillas son huesos planos, pero alargados. Se las compara con arcos tendidos desde la columna, atrás, hasta el esternón, adelante, al cual llegan por los cartílagos costales.",
+			"Doce de cada lado. Las siete primeras son verdaderas: cada una manda su propio cartílago al esternón. La octava, novena y décima son falsas: no llegan directo; sus cartílagos se enganchan a un cartílago común que sí se articula con el esternón. La once y la doce también se cuentan como falsas, pero son flotantes: extremo anterior libre, sin contacto con el esternón.",
+			"Longitud: crecen de la primera a la séptima y luego decrecen. La más ancha suele ser la sexta o la octava. Si alguien dice “todas las costillas son iguales”, ya saben que no estudió."
+		]
+	},
+	{
+		id: "costilla-curvas",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 3,
+		core: true,
+		kicker: "No son rectas ni horizontales",
+		title: "Tres curvaturas de cada arco",
+		bullets: [
+			"Enrollamiento: convexidad posterior, lateral, luego anterior",
+			"Torsión: no se apoya plana sobre la mesa",
+			"Eje longitudinal: la cara externa cambia de orientación"
+		],
+		diagram: "rib",
+		script: [
+			"Tomen una costilla típica —la quinta es el ejemplo del libro— y déjenla sobre la mesa. No queda plana. Eso ya les dice que hay más de una curva.",
+			"Primero, curvatura de enrollamiento. La costilla sale de la vértebra hacia lateral y atrás, hace el ángulo costal posterior, y de ahí se enrosca: lateral, adelante, y al final un poco a medial. Hay un ángulo anterior, mucho más suave que el posterior.",
+			"Segundo, curvatura de torsión. Si la ponen horizontal, apoya por el medio y por un extremo. El extremo posterior mira arriba y atrás; el anterior, abajo y a medial.",
+			"Tercero, curvatura en el eje largo: la cara superficial, la convexa, mira abajo y atrás atrás, y arriba y adelante adelante. El ángulo costovertebral, abierto hacia abajo, se pone más agudo cuanto más baja es la costilla. Por eso en la radiografía de frente las costillas se cruzan y cuesta numerarlas a los lados."
+		]
+	},
+	{
+		id: "costilla-partes",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 4,
+		core: true,
+		kicker: "Cabeza, cuello, tubérculo, cuerpo",
+		title: "Anatomía de una costilla tipo",
+		bullets: [
+			"Cabeza: 2 carillas + cresta para el disco",
+			"Cuello: entre cabeza y tubérculo",
+			"Tubérculo: se articula con la apófisis transversa",
+			"Cuerpo: surco costal en el borde inferior, cara medial"
+		],
+		diagram: "rib",
+		script: [
+			"Extremidad posterior. Tres cosas en fila: cabeza, cuello, tubérculo.",
+			"La cabeza se articula con los cuerpos vertebrales. En las costillas típicas hay dos carillas, superior e inferior, separadas por una cresta. Esa cresta mira al disco intervertebral y le da inserción a un ligamento. O sea: la cabeza de la sexta costilla, por ejemplo, se sienta a caballo entre T5 y T6.",
+			"El cuello es el puente, aplastado de adelante atrás, hacia lateral y atrás. Cara anterior lisa, hacia adentro del tórax. Cara posterior rugosa, llena de ligamentos.",
+			"El tubérculo se articula con la apófisis transversa de la vértebra del mismo número. Costilla 5 con transversa de T5.",
+			"El cuerpo: cara lateral convexa, cara medial cóncava hacia la caja. En el borde inferior, por dentro, está el surco costal. Ahí viajan vena, arteria y nervio intercostales. El borde superior es romo; el inferior, más cortante. Extremidad anterior: una fosita oval para el cartílago."
+		]
+	},
+	{
+		id: "recorrido-costillas",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 4,
+		core: true,
+		kicker: "Toquen el esquema",
+		title: "De la 1.ª a la 12.ª, con quién se conecta",
+		bullets: [
+			"Cabeza típica: dos vértebras + disco",
+			"Tubérculo: apófisis transversa de la misma vértebra",
+			"Adelante: 1–7 al esternón · 8–10 al cartílago común · 11–12 libres"
+		],
+		diagram: "cage",
+		script: [
+			"Vamos a recitarlas. No pasen de largo. Señalen cada número.",
+			"Primera: cabeza con una sola carilla, solo T1. Tubérculo con la transversa de T1. Adelante, cartílago propio al manubrio, justo bajo la clavícula.",
+			"Segunda: cabeza a caballo T1–T2. Cartílago al ángulo de Louis. Es la que usan para contar espacios.",
+			"Tercera a séptima: modelo clásico. Cabeza entre dos vértebras, tubérculo a la transversa del mismo número, cartílago propio al cuerpo del esternón. La séptima es la última verdadera y manda un ligamento a la xifoides.",
+			"Octava, novena, décima: falsas. Sus cartílagos se suben y se enganchan al de arriba hasta formar el reborde costal, el cartílago común. La décima a veces es casi flotante.",
+			"Once y doce: flotantes. Cabeza con una sola vértebra. No hay tubérculo útil, no hay articulación costotransversa. El extremo anterior se pierde en la pared. La doce a veces mide unos centímetros y en la placa parece que “falta”."
+		]
+	},
+	{
+		id: "primera",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 5,
+		core: true,
+		kicker: "La costilla que no perdona",
+		title: "Primera costilla",
+		bullets: [
+			"Corta, ancha, casi horizontal, aplastada de arriba abajo",
+			"Una sola carilla en la cabeza → T1",
+			"Tubérculo del escaleno anterior (Lisfranc)",
+			"Surco posterior: arteria subclavia + plexo · anterior: vena"
+		],
+		diagram: "first",
+		script: [
+			"Si de esta clase se llevan una costilla, que sea la primera. Es corta, ancha, muy curva, y a diferencia de las otras está aplastada de arriba abajo, no de fuera adentro. Casi horizontal. Cabeza con una sola superficie articular: solo T1.",
+			"La cara superior es un mapa. Atrás, un surco por donde pasan la arteria subclavia y el tronco inferior del plexo braquial, C8 y T1. En medio, un tubérculo —tubérculo de Lisfranc— donde se inserta el escaleno anterior. Por delante de ese tubérculo, otro surco: la vena subclavia. Artería atrás del escaleno, vena adelante. Siempre.",
+			"Cara inferior: pleura, vértice del pulmón. Borde interno: membrana suprapleural de Sibson. Borde externo: inserciones de serrato y demás. Relaciones: pasa bajo la clavícula, cerca del plexo, de los vasos subclavios, del ganglio estrellado. Una costilla cervical, cuando existe, pelea exactamente este territorio: plexo y subclavia. Por eso duele el brazo y se enfría la mano."
+		]
+	},
+	{
+		id: "segunda",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 2,
+		core: true,
+		kicker: "Transición al modelo",
+		title: "Segunda costilla",
+		bullets: [
+			"El doble de larga que la primera, menos aplastada",
+			"Tuberosidad para el serrato anterior",
+			"Cartílago en el ángulo esternal"
+		],
+		diagram: "rib",
+		script: ["La segunda es el puente entre la rareza de la primera y el modelo de la quinta. Más larga —casi el doble—, menos aplastada. En su cara externa hay una tuberosidad rugosa para el serrato anterior. Adelante, su cartílago llega al ángulo de Louis. Cuando palpen el ángulo esternal, están palpando la segunda. Desde ahí: segundo espacio abajo, tercer cartílago, y así sucesivamente."]
+	},
+	{
+		id: "flotantes",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 2,
+		core: true,
+		kicker: "Sin cartílago al esternón",
+		title: "Undécima y duodécima",
+		bullets: [
+			"Cabeza con una sola carilla",
+			"Sin tubérculo articular · sin costotransversa",
+			"Extremo anterior libre en la pared"
+		],
+		diagram: "cage",
+		highlight: "rib-12",
+		script: ["Once y doce: flotantes. Cabeza con una sola carilla, una sola vértebra. No hay tubérculo que valga, así que no hay articulación costotransversa. El extremo anterior no busca el esternón: se pierde en los músculos de la pared, en la región toracolumbar.", "La doce es caprichosa. A veces está muy atrofiada, unos centímetros. Antes de diagnosticar “costilla lumbar” en una radiografía, cuenten todas las de arriba y las vértebras de abajo. Si no cuentan, se equivocan. Y recuerden: el hígado y el bazo se apoyan cerca de estos arcos. Un golpe bajo puede fracturar la once o la doce y lacerar víscera."]
+	},
+	{
+		id: "cervicales",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 2,
+		core: false,
+		kicker: "Variantes que duelen",
+		title: "Costillas cervicales y lumbares",
+		bullets: [
+			"Cervical: ósea en C7, completa o en muñón",
+			"Comprime subclavia y plexo braquial",
+			"Lumbar: no diagnosticar sin contar las doce de arriba"
+		],
+		script: ["Costilla cervical: cualquier formación ósea con forma de costilla articulada a una vértebra cervical, casi siempre C7, a veces C6. Rara vez es completa hasta el esternón. Lo habitual es un muñón, o una cintilla fibrosa que llega a la primera costilla. El problema no es el hueso en la placa: es que estrecha el desfiladero de la subclavia y de las raíces del plexo. Dolor, hormigueo, mano fría. Se ve bien en una anteroposterior de cervicales.", "Costillas lumbares: prolongan la apófisis costal de L1, menos de L2 o L3. Cuenten. Siempre cuenten."]
+	},
+	{
+		id: "cartilagos",
+		section: "esqueleto",
+		chapter: "71 · Esqueleto",
+		minutes: 3,
+		core: true,
+		kicker: "La parte que dobla",
+		title: "Cartílagos costales",
+		bullets: [
+			"Hialinos · prolongan las diez primeras al esternón",
+			"1.ª–7.ª propios · 8.ª–10.ª al cartílago común",
+			"Con la edad se calcifican y el tórax se pone rígido"
+		],
+		diagram: "sternocostal",
+		script: [
+			"Los cartílagos costales prolongan las diez primeras costillas hacia el esternón. Los siete primeros van derecho. Del octavo al décimo se van uniendo para formar el cartílago costal común, el reborde que palpan bajo el apéndice xifoides.",
+			"Son cartílago hialino, elásticos, envueltos en pericondrio. En el niño son más flexibles; en el adulto se vuelven más frágiles; en el anciano se calcifican y entonces sí se ven en la radiografía. Mientras no estén calcificados, en la placa “no están”.",
+			"Cara anterior: inserciones de pectoral mayor y abdominales. Cara posterior: mira al interior. Bordes: membrana intercostal y músculos. Unidos a la costilla por la articulación costocondral —que en la práctica es una soldadura fibrosa— y al esternón por las esternocostales, que sí tienen movimiento."
+		]
+	},
+	{
+		id: "art-panorama",
+		section: "articulaciones",
+		chapter: "72 · Articulaciones",
+		minutes: 2,
+		core: true,
+		kicker: "Tres grupos",
+		title: "Las uniones que dejan respirar",
+		bullets: [
+			"Costovertebrales: cabeza + costotransversa",
+			"Esternocostales: cartílago al esternón",
+			"Otras: costocondrales, intercondrales, sínfisis esternales"
+		],
+		diagram: "costovertebral",
+		script: ["De todo este capítulo, dos uniones mandan la mecánica: las costovertebrales y las esternocostales. Las demás existen, pero se sueldan o apenas se mueven.", "Cada costilla típica se articula con la columna en dos puntos: la cabeza contra los cuerpos vertebrales, y el tubérculo contra la apófisis transversa. Adelante, el cartílago contra el esternón. Si esas sinoviales se inflaman o se artrosan, la costilla deja de subir y la respiración se achica. No es un detalle de atlas: es disnea de origen articular."]
+	},
+	{
+		id: "cabeza-costilla",
+		section: "articulaciones",
+		chapter: "72 · Articulaciones",
+		minutes: 3,
+		core: true,
+		kicker: "Articulación de la cabeza",
+		title: "La costilla a caballo del disco",
+		bullets: [
+			"Dos carillas costales + dos fositas vertebrales + disco",
+			"Ligamento intraarticular a la cresta y al disco",
+			"Ligamentos radiados anterior y posterior",
+			"1.ª, 11.ª y 12.ª: una sola vértebra, una sola cavidad"
+		],
+		diagram: "costovertebral",
+		script: [
+			"Superficies. Del lado de la costilla: cabeza con dos carillas oblicuas separadas por una cresta. Del lado vertebral: una fosita en la vértebra de arriba, otra en la de abajo, y en medio el disco. El conjunto forma un ángulo abierto a lateral donde se mete la cabeza. En fresco van cubiertas de fibrocartílago.",
+			"Medios de unión. Hay una cápsula, pero lo que importa es el ligamento intraarticular: va de la cresta de la cabeza al disco y parte la cavidad en dos. Más los ligamentos radiados, anterior y posterior, en abanico sobre el cuerpo vertebral.",
+			"Excepción: primera, once y doce se articulan con una sola vértebra. Ahí no hay ligamento intraarticular que parta nada, o es rudimentario. Una sola sinovial."
+		]
+	},
+	{
+		id: "costotransversa",
+		section: "articulaciones",
+		chapter: "72 · Articulaciones",
+		minutes: 3,
+		core: true,
+		kicker: "Tubérculo · apófisis transversa",
+		title: "Costotransversa",
+		bullets: [
+			"Superficies ovales, más planas abajo",
+			"Ligamentos costotransverso superior, lateral, propio",
+			"No existe en 11.ª y 12.ª"
+		],
+		diagram: "costovertebral",
+		script: [
+			"El tubérculo costal se apoya en el receso articular de la apófisis transversa de la vértebra del mismo número. Arriba esas carillas son más convexas; abajo, más planas. Es una sinovial.",
+			"Ligamentos: el costotransverso —a veces llamado interóseo— entre cuello de la costilla y transversa; el superior, del cuello a la transversa de la vértebra de arriba; el lateral, reforzando por fuera. Entre el cuello y la vértebra pasa el nervio intercostal rumbo al espacio.",
+			"En la once y la doce esto se acaba: no hay articulación costotransversa. Por eso esas costillas se mueven distinto y se fracturan con otro patrón."
+		]
+	},
+	{
+		id: "esternocostales",
+		section: "articulaciones",
+		chapter: "72 · Articulaciones",
+		minutes: 3,
+		core: true,
+		kicker: "Cartílago contra esternón",
+		title: "Esternocostales",
+		bullets: [
+			"Cartílago en cuña · escotadura esternal",
+			"Ligamentos radiados + intraarticular",
+			"1.ª casi fibrosa · 7.ª con ligamento costoxifoideo"
+		],
+		diagram: "sternocostal",
+		script: [
+			"Los siete primeros cartílagos se meten en las escotaduras del borde esternal. El cartílago llega como una cuña con dos carillas; el esternón ofrece dos carillas en cada escotadura, más juntas cuanto más abajo.",
+			"Cápsula delgada, continuación de pericondrio a periostio. Ligamentos radiados anterior y posterior en abanico. Y un ligamento intraarticular, interóseo, de la cuña al fondo de la escotadura, que puede partir la sinovial en dos. La primera casi no tiene cavidad: es prácticamente una articulación fibrosa, muy estable, y arriba manda ligamentos hacia la clavícula.",
+			"La séptima, además, tiene el ligamento costoxifoideo, del borde inferior del séptimo cartílago a la cara anterior de la xifoides, tapando en parte el ángulo infraesternal."
+		]
+	},
+	{
+		id: "otras-art",
+		section: "articulaciones",
+		chapter: "72 · Articulaciones",
+		minutes: 2,
+		core: false,
+		kicker: "Las que apenas se mueven",
+		title: "Costocondrales, intercondrales, esternales",
+		bullets: [
+			"Costocondral: soldadura hueso–cartílago",
+			"Intercondrales: 6–7–8–9–10 entre sí",
+			"Manubrioesternal y xifoesternal: sínfisis que osifican"
+		],
+		diagram: "sternocostal",
+		script: [
+			"Costocondral: la costilla tiene una cavidad elipsoide y el cartílago entra al revés. Se sueldan. Periostio continuo con pericondrio. No hay juego. Si duele ahí, piensen en costocondritis, no en “luxación”.",
+			"Intercondrales: los cartílagos 6, 7 y 8 se tocan por fositas ovales; 9 y 10 se enganchan hacia arriba al cartílago común.",
+			"Esternales: manubrio unido al cuerpo por un fibrocartílago denso, sínfisis manubrioesternal. Cuerpo a xifoides, sínfisis xifoesternal. Con la edad se osifican y el ángulo de Louis se vuelve rígido. Recuerden: por modestos que sean los movimientos, condicionan toda la mecánica. Y las sinoviales, aunque chicas, se infectan y se artrosan."
+		]
+	},
+	{
+		id: "forma",
+		section: "conjunto",
+		chapter: "73 · Conjunto",
+		minutes: 3,
+		core: true,
+		kicker: "Osteocartilaginoso en general",
+		title: "Forma: un cono truncado invertido",
+		bullets: [
+			"Cilindrocónica, vértice arriba",
+			"Diámetro transversal de la base > anteroposterior",
+			"Cambia con edad, biotipo, pulmón y músculos"
+		],
+		diagram: "types",
+		script: [
+			"Ya tenemos las piezas. Ahora la caja armada. Forma cilindrocónica, vértice arriba, base abajo. En la base, el diámetro transversal gana al anteroposterior. Eso es el tórax humano adulto. El del bebé es más redondo, más triangular; el del enfisematoso se vuelve barril.",
+			"Cara anterior o esternal: más ancha abajo, inclinada de arriba abajo y de atrás adelante. La forman esternón, siete cartílagos, cartílago común, y la parte anterior de costillas y espacios.",
+			"Cara posterior o dorsal: entre las líneas de los ángulos costales posteriores. En la media, las apófisis espinosas. A los lados, las costotransversas.",
+			"Caras laterales: convexas, unen adelante con atrás. Participan las doce costillas atrás, las diez a los lados, las ocho o nueve adelante."
+		]
+	},
+	{
+		id: "espacios",
+		section: "conjunto",
+		chapter: "73 · Conjunto",
+		minutes: 2,
+		core: true,
+		kicker: "Once de cada lado",
+		title: "Espacios intercostales",
+		bullets: [
+			"Se nombran por la costilla de arriba",
+			"Ocupados por intercostales + VAN",
+			"Anchos y forma cambian según el nivel"
+		],
+		diagram: "intercostal",
+		script: ["Entre costilla y costilla, el espacio intercostal. Lo limitan arriba y abajo dos costillas y sus cartílagos, atrás el cuerpo vertebral, adelante el esternón —en los seis primeros— o el cartílago común. Se nombra con el número de la costilla de arriba: segundo espacio está entre la segunda y la tercera.", "Ahí viven los tres intercostales y el paquete vasculonervioso. El ancho no es uniforme: más estrechos atrás, más cómodos adelante. El segundo espacio paraesternal es el clásico de la punción pericárdica; el cuarto o quinto, de la pleura. Siempre por el borde superior de la costilla inferior, para no clavar el VAN."]
+	},
+	{
+		id: "orificio-sup",
+		section: "conjunto",
+		chapter: "73 · Conjunto",
+		minutes: 3,
+		core: true,
+		kicker: "Estrecho superior · vestíbulo mediastinal",
+		title: "Orificio torácico superior",
+		bullets: [
+			"Atrás T1 · adelante escotadura yugular · lados 1.ª costilla",
+			"Inclinado: atrás más alto que adelante",
+			"Pasa el vértice pulmonar bajo la membrana suprapleural"
+		],
+		diagram: "superior",
+		script: ["El orificio de arriba lo cierran: atrás, el cuerpo de T1; adelante, el borde superior del manubrio, la escotadura yugular; a los lados, el borde medial de las primeras costillas y sus cartílagos. T1 se mete hacia adelante y estrecha el paso en la línea media.", "En conjunto está inclinado de atrás adelante y de arriba abajo. En inspiración tiende a horizontalizarse. Es el vestíbulo mediastinal: cuello comunicando con tórax. A cada lado, la membrana suprapleural cubre el vértice del pulmón, que se asoma por encima de la primera costilla. Por eso un traumatismo de base de cuello puede ser un neumotórax. Y por aquí suben vagos, frénicos, carótidas, subclavias, tráquea, esófago, conducto torácico a la izquierda."]
+	},
+	{
+		id: "orificio-inf",
+		section: "conjunto",
+		chapter: "73 · Conjunto",
+		minutes: 2,
+		core: true,
+		kicker: "Base · circunferencia inferior",
+		title: "Orificio torácico inferior",
+		bullets: [
+			"T12 atrás · xifoides adelante · 11.ª y 12.ª a los lados",
+			"Plano muy oblicuo, abajo y atrás",
+			"El diafragma cierra por encima de ese plano óseo"
+		],
+		diagram: "inferior",
+		script: ["Abajo: T12 atrás, punta de la xifoides adelante, cartílago común subiendo a medial, once y doce a los lados. El plano es muy oblicuo de adelante atrás y de arriba abajo. El diafragma no coincide con ese plano: se sienta más arriba, como una cúpula. Por eso un corte horizontal a T10 pilla a la vez tórax y abdomen.", "Hay cuatro escotaduras en esa circunferencia: dos posteriores, donde las flotantes se van a la columna, y dos anteriores, los ángulos infraesternales, abiertos a la pared abdominal. Si el ángulo está abierto, tórax ancho; si está cerrado, tórax de longilíneo."]
+	},
+	{
+		id: "tipos-indice",
+		section: "conjunto",
+		chapter: "73 · Conjunto",
+		minutes: 3,
+		core: true,
+		kicker: "Biotipo, edad, función",
+		title: "Tipos torácicos e índice",
+		bullets: [
+			"Ancho y corto · normal · largo y estrecho",
+			"Índice = transversal / anteroposterior × 100 ≈ 127 en esqueleto",
+			"Miden circunferencia y ampliación respiratoria"
+		],
+		diagram: "types",
+		script: [
+			"Tres tipos. Ancho y corto, ángulo infraesternal abierto: el de gente muy musculosa. Largo y estrecho, ángulo cerrado: el longilíneo. Y el intermedio, el “normal”.",
+			"El feto tiene tórax corto, desarrollado adelante, hígado enorme. El niño todavía corto, abdomen saliente; al ponerse de pie se ensancha el diámetro transversal. El adulto ya no depende solo del pulmón: hombros y cuello le ponen una pirámide con base arriba. Un gimnasio grande puede esconder un pulmón flojo. Por eso se mira el movimiento, no solo la forma.",
+			"En el anciano los cartílagos se osifican, las costovertebrales se ponen rígidas, y la forma sigue a la columna: cifosis, tórax en embudo senil. El índice torácico es transversal sobre anteroposterior por cien. En esqueleto, unos 127; en vivo, cerca de 140. En clínica miden perímetro en axilas, en mamas y en la base, y cuánto crece en inspiración: la ampliación torácica."
+		]
+	},
+	{
+		id: "rx",
+		section: "conjunto",
+		chapter: "73 · Conjunto",
+		minutes: 2,
+		core: true,
+		kicker: "Lo que se ve en la placa",
+		title: "Aspecto radiológico",
+		bullets: [
+			"Costillas se cruzan a los lados: contar con paciencia",
+			"Clavículas tapan la 1.ª por delante",
+			"Esternón de frente casi no se ve · pedir lateral u oblicua"
+		],
+		script: ["En una anteroposterior las costillas, por su oblicuidad, se cruzan a los lados. Contar mal una costilla es el error de residente más clásico. Empiecen arriba, identifiquen la primera —bajo la clavícula, densa, corta— y bajen.", "El orificio superior lo cruzan las clavículas, que tapan el extremo anterior de la primera. El esternón, salvo el manubrio, de frente casi no existe: hay que pedir lateral u oblicua, o tomografía. Diafragma y mediastino tapan el resto. No inventen fracturas de esternón en una PA de tórax."]
+	},
+	{
+		id: "intercostales",
+		section: "musculos",
+		chapter: "74 · Músculos",
+		minutes: 4,
+		core: true,
+		kicker: "Tres láminas por espacio",
+		title: "Intercostal externo, interno e íntimo",
+		bullets: [
+			"Externo: fibras abajo y adelante · desde la transversa al cartílago",
+			"Interno: fibras abajo y atrás · de la axila al esternón",
+			"Íntimo: el profundo, cubre el paquete"
+		],
+		diagram: "muscles",
+		script: [
+			"Los músculos esenciales de la pared son los intercostales. Accesorios: elevadores de las costillas, subcostales, transverso del tórax.",
+			"En cada espacio hay tres. El externo se inserta en los bordes de las costillas vecinas. Fibras oblicuas de arriba abajo y de atrás adelante —como meter las manos en los bolsillos. Va desde la articulación costotransversa hasta cerca de la costocondral. Adelante lo releva la membrana intercostal externa.",
+			"El interno, más profundo, fibras al revés: de arriba abajo y de adelante atrás. Ocupa sobre todo la parte anterior, de la línea axilar media al esternón.",
+			"El íntimo es el más profundo. Nace en el labio medial del surco costal y baja al borde superior de la costilla de abajo. Fibras como el interno. Se mete entre la pleura y el resto, y deja un canal para el paquete. Atrás está bajo el externo; adelante, bajo el interno."
+		]
+	},
+	{
+		id: "van",
+		section: "musculos",
+		chapter: "74 · Músculos",
+		minutes: 3,
+		core: true,
+		kicker: "De arriba a abajo en el surco",
+		title: "Vena, arteria, nervio",
+		bullets: [
+			"VAN en el surco de la costilla de arriba",
+			"Una arteriola corre el borde superior de la de abajo",
+			"Anastomosis con torácica interna adelante"
+		],
+		diagram: "intercostal",
+		script: [
+			"Entre las láminas, una celda de tejido: vena y arteria intercostales en el surco, nervio un poco más abajo —por eso el nervio es el más expuesto—, una arteriola que corre el borde superior de la costilla inferior, y ganglios. El orden clásico de arriba a abajo: vena, arteria, nervio. VAN.",
+			"Arterias y venas se anastomosan adelante con la torácica interna, que baja por detrás de los cartílagos, un centímetro del borde esternal. Por eso una herida paraesternal puede sangrar de los dos lados del espacio.",
+			"Clínica, una sola frase y se la tatuamos: para entrar a la pleura se punciona por el borde superior de la costilla inferior del espacio elegido. Nunca raspen el borde inferior de la de arriba. Ahí está el VAN."
+		]
+	},
+	{
+		id: "accesorios",
+		section: "musculos",
+		chapter: "74 · Músculos",
+		minutes: 2,
+		core: false,
+		kicker: "Los que casi nadie pregunta… hasta que preguntan",
+		title: "Elevadores, subcostales, transverso del tórax",
+		bullets: [
+			"Elevadores: transversa → costilla de abajo · inspiradores débiles",
+			"Subcostales: rudimentarios, cerca de la pleura atrás",
+			"Transverso del tórax: xifoides a cartílagos 3–6, por detrás"
+		],
+		script: [
+			"Elevadores de las costillas, o supracostales: del vértice de las transversas de C7 y de las once torácicas al borde superior y cara lateral de la costilla de abajo. Nervios intercostales. Inspiradores, poco potentes.",
+			"Subcostales: láminas rudimentarias entre pleura y el extremo posterior de los íntimos, saltando a veces más de un espacio.",
+			"Transverso del tórax, el viejo triangular del esternón: en la cara posterior del cuerpo y de la xifoides, en abanico hacia los cartílagos tercero a sexto. Entre él y el intercostal interno bajan los vasos torácicos internos. Acción mínima, músculo en regresión, pero el cirujano que abre el pecho por adelante se lo encuentra."
+		]
+	},
+	{
+		id: "dia-gen",
+		section: "diafragma",
+		chapter: "75 · Diafragma",
+		minutes: 3,
+		core: true,
+		kicker: "El techo del abdomen, el piso del tórax",
+		title: "Un músculo, dos cúpulas, un centro tendinoso",
+		bullets: [
+			"Tabique cúpula, convexo hacia el tórax",
+			"Cúpula derecha más alta que la izquierda",
+			"Inserciones en elementos móviles · doble inervación"
+		],
+		diagram: "diaphragm",
+		script: [
+			"El diafragma es un músculo plano, ancho, delgado, tabique entre tórax y abdomen. Cúpula con convexidad torácica. Se inserta en toda la circunferencia inferior de la caja y atrás lo escota la columna. En el centro, una lámina tendinosa: el centro frénico, el “espejo de Van Helmont”.",
+			"Lo original: la mayoría de sus inserciones están en piezas móviles —costillas, cartílagos, xifoides—. Su estructura recuerda a músculos digástricos con el tendón en medio. Aunque es impar, hay una mitad derecha y una izquierda, distintas funcionalmente, cada una con su frénico. El automatismo no nace en el músculo: nace en el bulbo y viaja por el nervio.",
+			"Dos cúpulas. La derecha, apoyada en el hígado, sube más. En espiración forzada puede llegar al cuarto espacio; la izquierda no pasa del quinto. Entre las dos, el centro, casi plano, pegado al pericardio, bastante fijo."
+		]
+	},
+	{
+		id: "pilares",
+		section: "diafragma",
+		chapter: "75 · Diafragma",
+		minutes: 4,
+		core: true,
+		kicker: "Porción lumbar",
+		title: "Pilares, arco del psoas y arco del cuadrado",
+		bullets: [
+			"Pilar derecho: L1–L3 (a veces L4) · izquierdo más corto",
+			"Ligamento arcuato medial: arco del psoas",
+			"Ligamento arcuato lateral: arco del cuadrado lumbar"
+		],
+		diagram: "diaphragm",
+		script: [
+			"Porción lumbar: los pilares. Cordones fibrotendinosos. El pilar derecho es el largo: cara anterior de L1, L2 y L3, a veces L4. El izquierdo se queda en L1–L2, a veces L3. En la línea media las fibras se cruzan. Delante de los cuerpos pueden formar arcos por donde pasan las arterias lumbares.",
+			"De cada pilar salen fibras mediales que cierran el hiato aórtico, fibras laterales que se pegan al pilar accesorio, y fibras en ocho alrededor de aorta y esófago.",
+			"Pilar accesorio: de la cara lateral de L2. Sus fibras laterales van a la apófisis costal de L1 y forman el ligamento arcuato medial, el arco del psoas. Debajo pasa el psoas.",
+			"El “tercer pilar” es el ligamento arcuato lateral, arco del cuadrado lumbar: de la apófisis costal de L1 a la doce, o a la once si la doce es corta. Entre esas fibras a veces queda un triángulo: el triángulo lumbocostal, hiato de Bochdalek. Ahí se cuelan las hernias congénitas posterolaterales."
+		]
+	},
+	{
+		id: "porciones",
+		section: "diafragma",
+		chapter: "75 · Diafragma",
+		minutes: 2,
+		core: true,
+		kicker: "Costal y esternal",
+		title: "De las últimas costillas a la xifoides",
+		bullets: [
+			"Dientes en la cara medial de las últimas costillas y cartílagos",
+			"Se entrecruzan con el transverso del abdomen",
+			"Triángulo esternocostal de Larrey: punto débil anterior"
+		],
+		script: ["Porción costal: fibras en la cara medial de las últimas costillas y cartílagos, en dientes que se estrechan hacia abajo. Se entrelazan con las del transverso del abdomen. Todas convergen al centro tendinoso.", "Porción esternal: dos fascículos cortos, casi horizontales, en la cara posterior de la xifoides. A veces los separa un hiato mediano. Entre esta porción y la costal queda el triángulo esternocostal de Larrey. Si se agranda, hernia retrocostoxifoidea. Anótenlo con Bochdalek: Larrey adelante, Bochdalek atrás."]
+	},
+	{
+		id: "centro",
+		section: "diafragma",
+		chapter: "75 · Diafragma",
+		minutes: 2,
+		core: true,
+		kicker: "Trébol de tres hojas",
+		title: "Centro tendinoso",
+		bullets: [
+			"Folíolos anterior, derecho e izquierdo",
+			"Foramen de la VCI entre anterior y derecho",
+			"Bandeletas semicirculares de Bourgery"
+		],
+		diagram: "diaphragm",
+		script: ["El centro tendinoso es una lámina fibrosa brillante, nacarada, en forma de trébol. Tres hojas: anterior, la más ancha y corta, cerca del esternón; derecha, oblicua atrás, unida a la anterior por un istmo donde perfora la vena cava; izquierda, hacia atrás y a la izquierda. Atrás hay una escotadura, no un cuarto folíolo.", "Hay fibras de los músculos y fibras de asociación: una bandeleta semicircular superior, más visible por la cara torácica, y una inferior en herradura por la cara abdominal. Las dos rodean el foramen de la cava. Esa vena está cosida al tendón: cuando el diafragma baja, la cava se abre. Ingenioso: en inspiración vuelve más sangre al corazón."]
+	},
+	{
+		id: "hiatos",
+		section: "diafragma",
+		chapter: "75 · Diafragma",
+		minutes: 4,
+		core: true,
+		kicker: "I 8 · 10 eggs · at 12",
+		title: "Tres orificios principales",
+		bullets: [
+			"T8 · foramen de la vena cava · en el tendón",
+			"T10 · hiato esofágico · en músculo · vagos",
+			"T12 · hiato aórtico · detrás, entre pilares · no se aplasta"
+		],
+		diagram: "diaphragm",
+		script: [
+			"Tres agujeros que no pueden fallar. El mnemotécnico en inglés les sirve igual: I ate ten eggs at twelve. I 8: vena cava T8. Ten eggs: esófago T10. At twelve: aorta T12.",
+			"Foramen de la vena cava: en el tendón, unión del folíolo anterior y el derecho. El más grande, cuadrilátero, fibroso. La vena va cosida. No se cierra en inspiración.",
+			"Hiato aórtico: atrás, entre los pilares, a T12. Pared tendinosa. Pasa la aorta, el conducto torácico, a veces la vena ácigos. Como está en tendón y contra la columna, el músculo no la estrangula. Bien pensado: no queremos que cada respiración cierre la aorta.",
+			"Hiato esofágico: más adelante y a la izquierda, a T10, en músculo. Pasa el esófago y los dos vagos —izquierdo adelante, derecho atrás—. El anillo muscular funciona como esfínter. Si se afloja, hernia hiatal. Si se aprieta de más, disfagia."
+		]
+	},
+	{
+		id: "hiatos-acc",
+		section: "diafragma",
+		chapter: "75 · Diafragma",
+		minutes: 2,
+		core: false,
+		kicker: "Los otros pasos",
+		title: "Forámenes accesorios y puntos débiles",
+		bullets: [
+			"Esplácnicos, cadena simpática, ácigos, hemiciagos",
+			"Triángulo lumbocostal · triángulo de Larrey",
+			"Sitios de hernia diafragmática congénita"
+		],
+		script: ["Además de los tres grandes: el esplácnico mayor pasa con el pilar; hay un hueco para el tronco simpático; la vena ácigos a la derecha puede ir con la aorta o el pilar; la hemiácigos a la izquierda perfora el pilar izquierdo. El triángulo lumbocostal comunica retroperitoneo con subpleural. El de Larrey, adelante, deja pasar los vasos torácicos internos hacia las epigástricas superiores.", "Si esos triángulos no cierran en el embrión, hernia de Bochdalek atrás o retrocostoxifoidea adelante. El septum transversum baja desde el cuello —por eso el frénico nace en C4— y si los brotes musculares no invaden bien el tabique, queda un agujero en plena cúpula."]
+	},
+	{
+		id: "relaciones-dia",
+		section: "diafragma",
+		chapter: "75 · Diafragma",
+		minutes: 3,
+		core: true,
+		kicker: "Arriba pulmón y corazón · abajo hígado y bazo",
+		title: "Relaciones torácicas y abdominales",
+		bullets: [
+			"Pleura diafragmática inseparable · receso costodiafragmático",
+			"Pericardio fibroso adherido al centro",
+			"Derecha hígado · izquierda estómago y bazo"
+		],
+		script: [
+			"Arriba, a los lados: pleura diafragmática tan pegada que al abrir el tórax parece que el músculo estuviera desnudo. No se despega. En la circunferencia, el receso costodiafragmático, más hondo atrás y a los lados, y más hondo todavía en espiración, cuando la cúpula sube. Cada cúpula mira la base pulmonar: a la derecha lóbulos medio e inferior; a la izquierda, inferior y un poco de língula.",
+			"En la media: el pericardio fibroso está soldado al centro. El corazón se sienta ahí. Atrás, el diafragma casi vertical cierra el mediastino posterior: aorta, esófago, conducto torácico, esplácnicos, simpático, ácigos.",
+			"Abajo, peritoneo salvo donde se adhiere a vísceras. Derecha: hígado, espacio subfrénico partido por el falciforme. Izquierda: estómago, bazo. Atrás: suprarrenales, polos renales. Un absceso subfrénico derecho empuja la cúpula y borra el receso en la placa. Ya saben por qué el cirujano mira el diafragma cuando busca pus."
+		]
+	},
+	{
+		id: "frenico",
+		section: "diafragma",
+		chapter: "75 · Diafragma",
+		minutes: 5,
+		core: true,
+		kicker: "C3 C4 C5",
+		title: "Nervio frénico",
+		bullets: [
+			"Motor del hemidiafragma · también sensitivo",
+			"Desciende sobre el escaleno anterior",
+			"En el tórax: por delante de la raíz pulmonar, sobre el pericardio"
+		],
+		diagram: "phrenic",
+		script: [
+			"El dato que no se negocia: el frénico es el nervio motor del hemidiafragma de su lado. C3, C4 y C5, con raíz principal en C4. También lleva fibras sensitivas —pleura, pericardio, peritoneo subfrénico— y simpáticas. Por eso un absceso bajo el diafragma derecho puede doler en el hombro: dermatoma C4.",
+			"Trayecto. Nace en el cuello, cruza el escaleno anterior de arriba abajo y de lateral a medial, cubierto por la fascia. Pasa entre subclavia y vena, entra al tórax. Derecho: pega a la vena cava superior, baja por la cara lateral derecha del pericardio, por delante de la raíz pulmonar, y llega al diafragma cerca de la cava. Izquierdo: cruza el cayado aórtico, forma un triángulo con la pulmonar y el vago —ahí está el ligamento arterioso y el recurrente izquierdo—, pasa delante de la raíz, se curva sobre el ventrículo izquierdo y llega detrás de la punta.",
+			"Ramos terminales: anterior, lateral y posterior. El posterior pasa a la cara abdominal, inerva pilares y manda al plexo celíaco. En cirugía: se respeta. Cortarlo sube la cúpula y tumba la función de ese pulmón. Si hay que abrir el diafragma, se corta siguiendo las ramas, no a través."
+		]
+	},
+	{
+		id: "clinica",
+		section: "cierre",
+		chapter: "Clínica",
+		minutes: 4,
+		core: true,
+		kicker: "Para qué estudiamos todo esto",
+		title: "Fracturas, pectus, hernias, punción",
+		bullets: [
+			"Una o dos costillas: benigno · muchas: tórax inestable",
+			"Embudo y carena: desarrollo del esternón",
+			"Bochdalek atrás · Larrey adelante · hiato esofágico",
+			"Toracocentesis: borde superior de la costilla de abajo"
+		],
+		diagram: "cage",
+		script: [
+			"Las costillas son sólidas y elásticas, pero se rompen fácil. Una o dos, sin vértice, suele ser benigno. Varias seguidas, con segmento que flota y se mueve al revés de la respiración: tórax inestable, urgencia. La primera se fractura poco; si se fractura, busquen lesión de subclavia y plexo. La once y la doce, piensen hígado o bazo.",
+			"Pectus: embudo hacia adentro, carena hacia afuera. Costilla cervical: plexo y subclavia. Costocondritis: dolor en la soldadura hueso–cartílago, que no se mueve.",
+			"Hernias: Bochdalek posterolateral, Larrey anterior, hiatal por el esófago. El frénico se respeta siempre. Y la punción: borde superior de la costilla inferior, VAN a salvo, por encima del diafragma según el espacio que elijan. Si puncionan muy abajo atrás, entran a abdomen. El diafragma, recuerden, sube hasta el cuarto espacio en espiración."
+		]
+	},
+	{
+		id: "sintesis",
+		section: "cierre",
+		chapter: "Cierre",
+		minutes: 3,
+		core: true,
+		kicker: "Lo que se llevan",
+		title: "Una caja que protege y una caja que respira",
+		bullets: [
+			"Hueso + cartílago + articulación = fuelle",
+			"Louis = 2.ª costilla · VAN = borde inferior por dentro",
+			"VCI T8 · esófago T10 · aorta T12 · frénico C3–C5"
+		],
+		diagram: "cage",
+		script: [
+			"Cierren los ojos y armenla. Doce vértebras atrás. Esternón adelante, tres piezas, ángulo de Louis en la segunda. Doce arcos por lado: siete verdaderos, tres falsos, dos flotantes. La primera, plana, con escaleno y subclavias. Cartílagos que doblan. Dos articulaciones que mandan el movimiento: cabeza de la costilla y tubérculo atrás, cartílago al esternón adelante.",
+			"Espacios con tres músculos y un VAN en el surco. Abajo, el diafragma en cúpula, centro tendinoso, tres agujeros a T8 T10 T12, dos frénicos que bajan por el pericardio.",
+			"La caja no es una jaula. Es la geografía de un país habitado, cambiante, móvil. Eso decía el prefacio del tratado, y para el tórax es literal: si no se mueve, no se respira. Preguntas."
+		]
+	},
+	{
+		id: "preguntas",
+		section: "cierre",
+		chapter: "Cierre",
+		minutes: 5,
+		core: true,
+		kicker: "Repaso en voz alta",
+		title: "Pregunten o las hago yo",
+		bullets: [
+			"¿Qué cartílago marca el ángulo de Louis?",
+			"¿Por qué el hiato aórtico no estrangula la aorta?",
+			"¿Dónde puncionan para no dar en el VAN?",
+			"¿Qué raíces “mantienen vivo” al diafragma?"
+		],
+		script: [
+			"Si nadie habla, pregunto yo. Uno: qué cartílago se articula a nivel del ángulo esternal. Respuesta: el segundo.",
+			"Dos: por qué la aorta no se aplasta en cada inspiración. Porque el hiato aórtico está en tendón, entre pilares, contra T12, no en vientre muscular.",
+			"Tres: por dónde entra la aguja en un espacio intercostal. Borde superior de la costilla de abajo. El VAN viaja en el surco de la de arriba.",
+			"Cuatro: C3, C4, C5 keep the diaphragm alive. Sección del frénico: esa cúpula se queda alta y flácida.",
+			"Cinco, si sobra tiempo: nombre las tres costillas que se articulan con una sola vértebra. Primera, once y doce. Gracias. Eso es la caja torácica."
+		]
+	}
+];
+function getDeck(mode) {
+	return mode === "60" ? slides.filter((s) => s.core) : slides;
+}
+var CORE_COUNT = slides.filter((s) => s.core).length;
+var TOTAL_COUNT = slides.length;
+var TOTAL_MINUTES = slides.reduce((a, s) => a + s.minutes, 0);
+var CORE_MINUTES = slides.filter((s) => s.core).reduce((a, s) => a + s.minutes, 0);
+//#endregion
+export { TOTAL_COUNT as a, getDeck as c, SECTIONS as i, slides as l, CORE_COUNT as n, TOTAL_MINUTES as o, CORE_MINUTES as r, cn as s, Button as t };
